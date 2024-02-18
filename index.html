@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            box-sizing: border-box;  /* Taşmayı engeller */
+        }
+        .relative{
+            position: relative; /* position: relative de değer verirsin ve konumu o değere göre ayarlar. */
+            left: 60px;
+
+        }
+        .absolute{
+            position: absolute; /* position: absolute da iki değer verirsin ve sayfanın o konumunda kalır. */
+            left: 25%;
+            top: 15%;
+        }
+        .fixed{
+            position: fixed; /* position: fixed da yine iki değer verirsin ve o konumda hep kalır sen aşağıda insen hep aynı yerde gözükür ve kalır. sabittir. */
+            right: 60px;
+            bottom: 40px;
+        }
+        .sticky{
+            position: sticky; /* position sticky ise sayfayı aşağı indirdikçe oda  bizle beraber aşağı inmeye başlar ve sayfada sürekli gözükür. */
+            top: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="relative"><p>Neos Yazılım</p></div>
+    <div class="absolute"><p>Python</p></div>
+    <div class="fixed"><p>Full Stack Developer</p></div>
+    <div class="sticky"><p>7 Ekim Full Stack Grubu</p></div>
+    <div style="height: 3000px;"></div>
+</body>
+</html>
